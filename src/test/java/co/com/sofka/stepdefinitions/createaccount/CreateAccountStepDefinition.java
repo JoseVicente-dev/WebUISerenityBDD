@@ -1,18 +1,16 @@
 package co.com.sofka.stepdefinitions.createaccount;
 
 import co.com.sofka.stepdefinitions.SetupWebUI;
-import co.com.sofka.userinterface.createaccountform.CreateAccountFormPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.log4j.Logger;
-import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 
 import java.util.Map;
 
-import static co.com.sofka.question.createaccountform.CreateAccountSuccess.createAccountWasSuccess;
-import static co.com.sofka.question.createaccountform.CreateAccountUnsuccess.createAccountWasUnsuccessful;
+import static co.com.sofka.question.createaccountform.CreateAccountSuccess.createAccountIsSuccess;
+import static co.com.sofka.question.createaccountform.CreateAccountUnsuccess.createAccountIsUnsuccessful;
 import static co.com.sofka.task.createaccountform.FillCreateAccountForm.fillCreateAccountForm;
 import static co.com.sofka.task.landingpage.GoToSignIn.goToSignIn;
 import static co.com.sofka.task.landingpage.OpenLandingPage.openLandingPage;
@@ -26,7 +24,7 @@ public class CreateAccountStepDefinition extends SetupWebUI {
     private static final Logger LOGGER = Logger.getLogger(CreateAccountStepDefinition.class);
     private static final String ACTOR_NAME = "Phillip";
     private Map<String, String> dataToValidate;
-    private String ACCOUNT_NAME;
+    private String accountName;
 
     @Given("que estoy en la pagina de registro de la plataforma")
     public void queEstoyEnLaPaginaDeRegistroDeLaPlataforma() {
@@ -50,7 +48,7 @@ public class CreateAccountStepDefinition extends SetupWebUI {
         //
         // For other transformations you can register a DataTableType.
 
-        ACCOUNT_NAME = dataTable.get("FirstName")+" "+dataTable.get("LastName");
+        accountName = "MY ACCOUNT";
         theActorInTheSpotlight().attemptsTo(
                 goToCreateAccountForm()
                         .withCreateEmail(generateEmail()),
@@ -70,7 +68,7 @@ public class CreateAccountStepDefinition extends SetupWebUI {
     @Then("se mostrara un mensaje que confrima mi registro en la plataforma")
     public void seMostraraUnMensajeQueConfrimaMiRegistroEnLaPlataforma() {
         theActorInTheSpotlight().should(
-                seeThat(createAccountWasSuccess(),Matchers.containsString(ACCOUNT_NAME))
+                seeThat(createAccountIsSuccess(),Matchers.containsString(accountName))
         );
     }
 
@@ -100,7 +98,7 @@ public class CreateAccountStepDefinition extends SetupWebUI {
     public void seMostrarUnMensajeDeAdvertencia(String errorMessage) {
 
         theActorInTheSpotlight().should(
-                seeThat(createAccountWasUnsuccessful(),Matchers.containsString(errorMessage))
+                seeThat(createAccountIsUnsuccessful(),Matchers.containsString(errorMessage))
         );
 
     }

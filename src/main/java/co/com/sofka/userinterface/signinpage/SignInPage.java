@@ -15,7 +15,7 @@ public class SignInPage extends PageObject {
             .located(By.cssSelector("#SubmitCreate > span"));
 
     //for sign in scenarios
-    public static final Target EMAIL_SIGIN_FIELD = Target
+    public static final Target EMAIL_SIGNIN_FIELD = Target
             .the("Email Sign in field")
             .located(By.id("email"));
     public static final Target PASSWORD_FIELD = Target
@@ -23,7 +23,7 @@ public class SignInPage extends PageObject {
             .located(By.id("passwd"));
     public static final Target SIGNIN_BTN = Target
             .the("Sign in button")
-            .located(By.id("#SubmitLogin > span"));
+            .located(By.cssSelector("#SubmitLogin > span"));
 
     //for validations
     public static final Target SIGN_IN_ERROR_MESSAGE_VALIDATION = Target

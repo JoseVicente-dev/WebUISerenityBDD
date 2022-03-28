@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="2" failures="0" name="Ingresar" skipped="0" tests="2" time="83.43" timestamp="2022-03-27 11:27:17"><testcase name="Ingresar al aplicativo con credenciales validas"><error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;ol &gt; li&quot;}&#10;  (Session info: chrome=99.0.4844.84)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-107VJ5P9', ip: '192.168.20.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\SOLIDS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49349}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c651c2eeb9babbd55cd688163a88ea33&#10;*** Element info: {Using=css selector, value=ol &gt; li}" type="java.lang.AssertionError">no such element: Unable to locate element: {"method":"css selector","selector":"ol &gt; li"}
+  (Session info: chrome=99.0.4844.84)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-107VJ5P9', ip: '192.168.20.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\SOLIDS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49349}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c651c2eeb9babbd55cd688163a88ea33
+*** Element info: {Using=css selector, value=ol &gt; li}</error><system-err>no such element: Unable to locate element: {"method":"css selector","selector":"ol &gt; li"}
+  (Session info: chrome=99.0.4844.84)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-107VJ5P9', ip: '192.168.20.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\SOLIDS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49349}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c651c2eeb9babbd55cd688163a88ea33
+*** Element info: {Using=css selector, value=ol &gt; li}&#13;
+co.com.sofka.stepdefinitions.signin.SigninStepDefinition.podreConsultarElEstadoDeMisPoductos(SigninStepDefinition.java:84)&#13;
+✽.podre consultar el estado de mis poductos(file:///C:/Users/SolidSnake/Desktop/SofkaU/Automatizacion/WebUISerenityBDD/src/test/resources/features/signin/signin.feature:20)&#13;
+</system-err></testcase><testcase name="Intentar ingresar con un formato de correo no valido"><error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign in&quot;}&#10;  (Session info: chrome=99.0.4844.84)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-107VJ5P9', ip: '192.168.20.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\SOLIDS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49416}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: aa17e9ebe4eeda39ec4adb07725ef275&#10;*** Element info: {Using=link text, value=Sign in}" type="org.openqa.selenium.NoSuchElementException">no such element: Unable to locate element: {"method":"link text","selector":"Sign in"}
+  (Session info: chrome=99.0.4844.84)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-107VJ5P9', ip: '192.168.20.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\SOLIDS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49416}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: aa17e9ebe4eeda39ec4adb07725ef275
+*** Element info: {Using=link text, value=Sign in}</error><system-err>no such element: Unable to locate element: {"method":"link text","selector":"Sign in"}
+  (Session info: chrome=99.0.4844.84)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-107VJ5P9', ip: '192.168.20.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\SOLIDS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49416}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: aa17e9ebe4eeda39ec4adb07725ef275
+*** Element info: {Using=link text, value=Sign in}&#13;
+co.com.sofka.task.landingpage.GoToSignIn.performAs(GoToSignIn.java:13)&#13;
+co.com.sofka.stepdefinitions.signin.SigninStepDefinition.queEstoyEnElModuloDeIngreso(SigninStepDefinition.java:92)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:27)&#13;
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:49)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:51)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:67)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:227)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:54)&#13;
+</system-err></testcase></testsuite>

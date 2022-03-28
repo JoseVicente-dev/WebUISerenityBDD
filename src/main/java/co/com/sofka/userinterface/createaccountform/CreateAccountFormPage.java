@@ -42,9 +42,13 @@ public class CreateAccountFormPage extends PageObject {
             .the("Register button")
             .located(By.cssSelector("#submitAccount > span"));
 
+    public static final Target  SIGN_OUT_LINK= Target
+            .the("Sign out link")
+            .located(By.linkText("Sign out"));
+
     //For validations
     public static final Target  ACCOUNT_LINK= Target
             .the("Account link")
-            .located(By.cssSelector(".account"));
+            .located(By.cssSelector(".page-heading"));
 
 }

@@ -10,7 +10,7 @@ public class CreateAccountSuccess implements Question<String> {
         return CreateAccountFormPage.ACCOUNT_LINK.resolveFor(actor).getText().trim();
     }
 
-    public static CreateAccountSuccess createAccountWasSuccess(){
+    public static CreateAccountSuccess createAccountIsSuccess(){
         return new CreateAccountSuccess();
     }
 }
