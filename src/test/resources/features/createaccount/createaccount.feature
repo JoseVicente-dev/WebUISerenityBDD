@@ -6,15 +6,15 @@ Feature: Registrarse en la plataforma
   Scenario: Crear un nuevo usuario con campos obligatorios
     Given que estoy en la pagina de registro de la plataforma
     When diligencie los campos obligatorios con mi informacion personal necesaria
-      | First Name   | Philip         |
-      | Last Name    | Sherman        |
+      | FirstName   | Philip         |
+      | LastName    | Sherman        |
       | Password     | 12345          |
       | Address      | 42 Wallaby Way |
       | City         | Sidney         |
       | State        | Alabama        |
-      | Zip Code     | 2000           |
-      | Mobile phone | 1234567890     |
-    Then se mostrará un mensaje que confrima mi registro en la plataforma
+      | ZipCode     | 20000           |
+      | MobilePhone | 1234567890     |
+    Then se mostrara un mensaje que confrima mi registro en la plataforma
 
   Scenario: Intentar crear un usuario con un formato de email no valido
     Given que estoy en la pagina de creacion de cuenta

@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="db412c5d339d13c032727922882f5556b5d9f6834cec77e43a4968384a89337b.html">Registrarse En La Plataforma</a></span>
+                > <span class="truncate-60"><a
+                    href="6f1c7d65e3f75612786ff73d0e10365b625c7100da8c41e0494b3443971c2484.html">Crear un nuevo usuario con campos obligatorios </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-03-2022 21:38</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Registrarse En La Plataforma </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As cliente del la tienda<br />
+I want to registrarme en la plataforma<br />
+So that yo pueda comprar en línea
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Crear un nuevo usuario con campos obligatorios
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="61866cf531c1829409ee181810543efdb6535209b0cd594f1b9aa28bc7137d46.png" title=" Given que estoy en la pagina de registro de la plataforma" width="1920"/>
+                <img src="61866cf531c1829409ee181810543efdb6535209b0cd594f1b9aa28bc7137d46.png" title=" Phillip open landing page" width="1920"/>
+                <img src="61866cf531c1829409ee181810543efdb6535209b0cd594f1b9aa28bc7137d46.png" title=" Phillip opens the Landing page" width="1920"/>
+                <img src="da32a997779548e27f48e96c3daabdd7a549f411ccd3a85356860638ecf30f7c.png" title=" Phillip opens the Landing page (completed)" width="1920"/>
+                <img src="da32a997779548e27f48e96c3daabdd7a549f411ccd3a85356860638ecf30f7c.png" title=" Phillip open landing page (completed)" width="1920"/>
+                <img src="da32a997779548e27f48e96c3daabdd7a549f411ccd3a85356860638ecf30f7c.png" title=" Phillip go to sign in" width="1920"/>
+                <img src="aeca3320d91a9933cdc264926d6ceb44413dfa5b8364e19fb05c9a50f27861c0.png" title=" Phillip clicks on Sing In link" width="1920"/>
+                <img src="de18858c9d233961a5a56af32169a6265440acc0371472990c7ba43a964d1a56.png" title=" Phillip clicks on Sing In link (completed)" width="1920"/>
+                <img src="de18858c9d233961a5a56af32169a6265440acc0371472990c7ba43a964d1a56.png" title=" Phillip go to sign in (completed)" width="1920"/>
+                <img src="de18858c9d233961a5a56af32169a6265440acc0371472990c7ba43a964d1a56.png" title=" Given que estoy en la pagina de registro de la plataforma (completed)" width="1920"/>
+                <img src="274a1dae727e8b806cf33901f651067bed76c8471b6bde9bb9609e799df3d4b8.png" title=" When diligencie los campos obligatorios con mi informacion personal necesaria
+| FirstName | Philip |
+| LastName | Sherman |
+| Password | 12345 |
+| Address | 42 Wallaby Way |
+| City | Sidney |
+| State | Alabama |
+| ZipCode | 20000 |
+| MobilePhone | 1234567890 |" width="1920"/>
+                <img src="274a1dae727e8b806cf33901f651067bed76c8471b6bde9bb9609e799df3d4b8.png" title=" Phillip go to create account form" width="1920"/>
+                <img src="274a1dae727e8b806cf33901f651067bed76c8471b6bde9bb9609e799df3d4b8.png" title=" Phillip clicks on Email create field" width="1920"/>
+                <img src="96ba9b759cfc9c6782fea691b4eb0202d033c0eebb6f1fe264c3684490751b03.png" title=" Phillip clicks on Email create field (completed)" width="1920"/>
+                <img src="96ba9b759cfc9c6782fea691b4eb0202d033c0eebb6f1fe264c3684490751b03.png" title=" Phillip clears field Email create field" width="1920"/>
+                <img src="ba80aec7436b97260b55d0034ca5ed101b919741a9c299f33f126483059c66d7.png" title=" Phillip clears field Email create field (completed)" width="1920"/>
+                <img src="ba80aec7436b97260b55d0034ca5ed101b919741a9c299f33f126483059c66d7.png" title=" Phillip enters 'p.sherman0.08116943861423298@pixar.com' into Email create field" width="1920"/>
+                <img src="c8c1124851fe6ace73b89fff20212bf076e67e496bd24d465856a715a6f6992e.png" title=" Phillip enters 'p.sherman0.08116943861423298@pixar.com' into Email create field (completed)" width="1920"/>
+                <img src="18337dd19dff4bac9c66134a381612a729fa5c248f7c2cbead39de864d3b2849.png" title=" Phillip clicks on Create an account button" width="1920"/>
+                <img src="828b7d5583fabbc337dd0bde5c101db21e0fa833ba8b49bc24957fdb4cf14a39.png" title=" Phillip clicks on Create an account button (completed)" width="1920"/>
+                <img src="828b7d5583fabbc337dd0bde5c101db21e0fa833ba8b49bc24957fdb4cf14a39.png" title=" Phillip go to create account form (completed)" width="1920"/>
+                <img src="828b7d5583fabbc337dd0bde5c101db21e0fa833ba8b49bc24957fdb4cf14a39.png" title=" Phillip fill create account form" width="1920"/>
+                <img src="350cb39cf228a4c7c816ff377233f081d9e6e3aad8b85a7572d13bfd122272cc.png" title=" Phillip clicks on First Name" width="1920"/>
+                <img src="697f5199dd12f460bc4704f6a038f69015a65da1ef5356fde09b224e65dd16cc.png" title=" Phillip clicks on First Name (completed)" width="1920"/>
+                <img src="697f5199dd12f460bc4704f6a038f69015a65da1ef5356fde09b224e65dd16cc.png" title=" Phillip clears field First Name" width="1920"/>
+                <img src="60ab0fcdb4a8f5df9be68bccb30a33a37c15cf0b32587a5ec845564baf5455d3.png" title=" Phillip clears field First Name (completed)" width="1920"/>
+                <img src="60ab0fcdb4a8f5df9be68bccb30a33a37c15cf0b32587a5ec845564baf5455d3.png" title=" Phillip enters 'Philip' into First Name" width="1920"/>
+                <img src="b40d8838c7faa51edbf4879ac6da1228841f0972ae3451c1a45fc4253846ad64.png" title=" Phillip enters 'Philip' into First Name (completed)" width="1920"/>
+                <img src="dde666705439b46c54b443d88efe50dc09096ae3007e22e579e3e65a94fd749e.png" title=" Phillip clicks on Last Name" width="1920"/>
+                <img src="d1e3b77fcd47a33258b0add2d02f90255ec2cd6ba65b33e6ea288adc4a295f68.png" title=" Phillip clicks on Last Name (completed)" width="1920"/>
+                <img src="d1e3b77fcd47a33258b0add2d02f90255ec2cd6ba65b33e6ea288adc4a295f68.png" title=" Phillip clears field Last Name" width="1920"/>
+                <img src="b8a88c7be3ab11d834060d31c7fea1b8d71ddccdefecebc9b8ddc284f65357b5.png" title=" Phillip clears field Last Name (completed)" width="1920"/>
+                <img src="b8a88c7be3ab11d834060d31c7fea1b8d71ddccdefecebc9b8ddc284f65357b5.png" title=" Phillip enters 'Sherman' into Last Name" width="1920"/>
+                <img src="a6642f2415a7d676c31ca7316ba16f7c1c1dea542d58d6aaf3aa98160e08e4c1.png" title=" Phillip enters 'Sherman' into Last Name (completed)" width="1920"/>
+                <img src="03a0b21f32d13bc905d9c06480c6321cfa2a62997f29cd448fd68df7604e6014.png" title=" Phillip clicks on Password" width="1920"/>
+                <img src="0ed7dff441b60f93c41f5dadd6d7cedaf1e0f0364921991826b2119de6081bcb.png" title=" Phillip clicks on Password (completed)" width="1920"/>
+                <img src="0ed7dff441b60f93c41f5dadd6d7cedaf1e0f0364921991826b2119de6081bcb.png" title=" Phillip clears field Password" width="1920"/>
+                <img src="e7d09981455b98e7047aa3d7da7a9d8147cdd66ff802818e272898411a00e7bb.png" title=" Phillip clears field Password (completed)" width="1920"/>
+                <img src="e7d09981455b98e7047aa3d7da7a9d8147cdd66ff802818e272898411a00e7bb.png" title=" Phillip enters '12345' into Password" width="1920"/>
+                <img src="a89c7177cdbf04d2114b19d493dd892288fb752cdc19ddc7810aa3388ccced20.png" title=" Phillip enters '12345' into Password (completed)" width="1920"/>
+                <img src="a1ac626bceab0c1a1197561a59a10ed5a0e69c4c669a67003a75a8a75b8e9100.png" title=" Phillip clicks on Address" width="1920"/>
+                <img src="ae0d6b98d9b12d737fe8f0b5bc28f0cd0c1b82df63762101069a7ae0b109f69a.png" title=" Phillip clicks on Address (completed)" width="1920"/>
+                <img src="ae0d6b98d9b12d737fe8f0b5bc28f0cd0c1b82df63762101069a7ae0b109f69a.png" title=" Phillip clears field Address" width="1920"/>
+                <img src="3dd15399f6ac61ab195c2514ac39ae306d75b73c4a6601b2880d1154fd1bd423.png" title=" Phillip clears field Address (completed)" width="1920"/>
+                <img src="3dd15399f6ac61ab195c2514ac39ae306d75b73c4a6601b2880d1154fd1bd423.png" title=" Phillip enters '42 Wallaby Way' into Address" width="1920"/>
+                <img src="0cee4052453b3f6ca2c33bd560626cda03db569e3ef30d0c1ce044c64779bae7.png" title=" Phillip enters '42 Wallaby Way' into Address (completed)" width="1920"/>
+                <img src="3fa64934789129b69c3e995d4bbe3ec35f6e1a73470e15bb5b63ed3e66294dc2.png" title=" Phillip clicks on City" width="1920"/>
+                <img src="3e52dd7d580528b4e107573f8fd78c8d476f35d0607ec49be8b8cd4d4072e7f6.png" title=" Phillip clicks on City (completed)" width="1920"/>
+                <img src="3e52dd7d580528b4e107573f8fd78c8d476f35d0607ec49be8b8cd4d4072e7f6.png" title=" Phillip clears field City" width="1920"/>
+                <img src="27e7879cd4bf941e609202899000a61b2389bc39beee1d88ce7ffe6b94a8905e.png" title=" Phillip clears field City (completed)" width="1920"/>
+                <img src="27e7879cd4bf941e609202899000a61b2389bc39beee1d88ce7ffe6b94a8905e.png" title=" Phillip enters 'Sidney' into City" width="1920"/>
+                <img src="848a325fe2ec0c1ae5950501d87354f4a831d2e4d0b40a947bed2bceee49708d.png" title=" Phillip enters 'Sidney' into City (completed)" width="1920"/>
+                <img src="df7dc9cf3210107f4072a1c95c718f67cd821b64b5de8a812e459c9b3dc4a909.png" title=" Phillip clicks on State" width="1920"/>
+                <img src="afde2b82e4e10c224c5081e4967d1cdf86506d72300a1cf1e7aba6ff9ff55fe3.png" title=" Phillip clicks on State (completed)" width="1920"/>
+                <img src="afde2b82e4e10c224c5081e4967d1cdf86506d72300a1cf1e7aba6ff9ff55fe3.png" title=" Phillip select Alabama on State" width="1920"/>
+                <img src="5ac4207caea5c1804ebcfa01a6fd573a5fab9f2902ac6b32abcbe21e664557a3.png" title=" Phillip select Alabama on State (completed)" width="1920"/>
+                <img src="40ea6cf6aecd475cd1cf9321e869206d064210ebb7e1b708d0d903bc51d922f7.png" title=" Phillip clicks on Zip code" width="1920"/>
+                <img src="e3ea713b33a4a17141444bc9abe6ffc6478a74a1c261e699d0ae1702b99163da.png" title=" Phillip clicks on Zip code (completed)" width="1920"/>
+                <img src="e3ea713b33a4a17141444bc9abe6ffc6478a74a1c261e699d0ae1702b99163da.png" title=" Phillip clears field Zip code" width="1920"/>
+                <img src="e3ea713b33a4a17141444bc9abe6ffc6478a74a1c261e699d0ae1702b99163da.png" title=" Phillip clears field Zip code (completed)" width="1920"/>
+                <img src="e3ea713b33a4a17141444bc9abe6ffc6478a74a1c261e699d0ae1702b99163da.png" title=" Phillip enters '20000' into Zip code" width="1920"/>
+                <img src="cb33ffadd8bfe25214a7bac714759fd2c1a98d3c9f693347548af46954aeba42.png" title=" Phillip enters '20000' into Zip code (completed)" width="1920"/>
+                <img src="53befec1478d68bd51d16661b5a4b91405d09914de2e99c1a336b470361009ce.png" title=" Phillip clicks on Mobile phone" width="1920"/>
+                <img src="694b0fba83724986977c809b5a2cb231f4b0b9465558e224f8afbc80d2467e75.png" title=" Phillip clicks on Mobile phone (completed)" width="1920"/>
+                <img src="694b0fba83724986977c809b5a2cb231f4b0b9465558e224f8afbc80d2467e75.png" title=" Phillip clears field Mobile phone" width="1920"/>
+                <img src="2c172bc7b64622631a6c63d87cae0a865802c5d09c28f12e1cc520c948103679.png" title=" Phillip clears field Mobile phone (completed)" width="1920"/>
+                <img src="2c172bc7b64622631a6c63d87cae0a865802c5d09c28f12e1cc520c948103679.png" title=" Phillip enters '1234567890' into Mobile phone" width="1920"/>
+                <img src="50dd016383ad9401088fe5aa2df117922ced345aac3aa0f99165c89a7216400b.png" title=" Phillip enters '1234567890' into Mobile phone (completed)" width="1920"/>
+                <img src="e98d4f6280a56c5c558f2e3f7416058dbbe6e695930a257cd545b3fdb74f52cb.png" title=" Phillip clicks on Register button" width="1920"/>
+                <img src="c240cbab82dc3a1591c2c0c750852b10ebd3afc0494f5b61be3bc9a95a2481dd.png" title=" Phillip clicks on Register button (completed)" width="1920"/>
+                <img src="c240cbab82dc3a1591c2c0c750852b10ebd3afc0494f5b61be3bc9a95a2481dd.png" title=" Phillip fill create account form (completed)" width="1920"/>
+                <img src="c240cbab82dc3a1591c2c0c750852b10ebd3afc0494f5b61be3bc9a95a2481dd.png" title=" When diligencie los campos obligatorios con mi informacion personal necesaria
+| FirstName | Philip |
+| LastName | Sherman |
+| Password | 12345 |
+| Address | 42 Wallaby Way |
+| City | Sidney |
+| State | Alabama |
+| ZipCode | 20000 |
+| MobilePhone | 1234567890 | (completed)" width="1920"/>
+                <img src="c240cbab82dc3a1591c2c0c750852b10ebd3afc0494f5b61be3bc9a95a2481dd.png" title=" Then se mostrara un mensaje que confrima mi registro en la plataforma" width="1920"/>
+                <img src="c240cbab82dc3a1591c2c0c750852b10ebd3afc0494f5b61be3bc9a95a2481dd.png" title=" Then create account success should be a string containing 'Philip Sherman'" width="1920"/>
+                <img src="c240cbab82dc3a1591c2c0c750852b10ebd3afc0494f5b61be3bc9a95a2481dd.png" title=" Then se mostrara un mensaje que confrima mi registro en la plataforma (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.2.9</span>
+</div>
+</body>
+</html>

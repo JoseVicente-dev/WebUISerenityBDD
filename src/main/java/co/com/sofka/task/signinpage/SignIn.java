@@ -13,17 +13,17 @@ public class SignIn implements Task {
 
     }
 
-    public SignIn setSignInEmail(String signInEmail) {
+    public SignIn withEmail(String signInEmail) {
         this.signInEmail = signInEmail;
         return this;
     }
 
-    public SignIn setPassword(String password) {
+    public SignIn andPasswordCredentials(String password) {
         this.password = password;
         return this;
     }
 
-    public static GoToCreateAccountForm goToCreateAccountForm(){
-        return new GoToCreateAccountForm();
+    public static SignIn signIn(){
+        return new SignIn();
     }
 }
